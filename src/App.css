@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.5s;
+}
+
+#root {
+  /* background: #383838; */
+  /* height: 100%; */
+}
+
+.App {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  grid-template-areas: 
+    "header header"
+    "aside main";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 50px 11fr;
+  /* grid-column-gap: 10px; */
+
+  position: relative;
+}
+
+header img {
+  width: 80px;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  background-color: #f56060;
+  padding-left: 10px;
+  /* margin: 10px; */
+  color: #ffffff;
+  /* border-radius: 50px; */
+  /* color: #383838; */
+  z-index: 9999;
+  /* box-shadow: -12px -12px 20px 0px #000; */
+}
+
+aside {
+  grid-area: aside;
+  position: fixed;
+  /* background-color: #f77c7c; */
+  z-index: 1199;
+  transition: .5s;
+  /* padding: 15px; */
+  width: 230px;
+  height: 100%;
+  transform: translateX(-210px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+/* aside:hover { 
+  transform: translateX(0);
+} */
+
+aside img {
+  width: 40px;
+  /* margin-right: -9px; */
+}
+
+.nav-item {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 10px; */
+  cursor: pointer;
+  padding: 5px 5px;
+  margin: 5px 0;
+  font-size: 20px;
+  color: #ffffff;
+  /* color: #383838; */
+  background-color: #f56060;
+  font-weight: 600;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transform: translateX(30px);
+  
+  /* transform: translateX(-160px); */
+}
+
+.nav-item a {
+  width: 100%;
+}
+
+.nav-item:first-child {
+  /* margin-top: 10px; */
+}
+
+.nav-item:hover {
+  transition: .7s;
+  transform: translateX(210px);
+}
+
+.nav-item:last-child {
+  margin: 0;
+  margin-bottom: 65px;
+}
+
+.nav-item:hover a{
+  transform: translateX(15px);
+}
+
+
+main {
+  grid-area: main;
+  width: 98%;
+  margin-right: 10px;
+  margin: 0 auto;
+  margin-top: 1%;
+  background: #ffffff;
+}
+
+.banner {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+  /* box-shadow: 0px 0px 3px 0px #000; */
+  margin-bottom: 10px;
+}
+
+.banner::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  z-index: 199;
+  
+}
+
+.banner img{
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .banner {
+      height: 160px;
+    }
+}
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {
+/* стили */
+}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+/* стили */
+}
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* стили */
+}
+
+/* iPads (горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* стили */
+}
+
+/* iPads (вертикальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+/* стили */
+}
+
+/* iPad 3**********/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+/* стили */
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+/* стили */
+}
+
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen  and (min-width: 1224px) {
+/* стили */
+}
