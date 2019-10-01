@@ -2,7 +2,7 @@ aside {
     grid-area: aside;
     position: fixed;
     /* background-color: #f77c7c; */
-    z-index: 1199;
+    z-index: 3199;
     transition: .5s;
     /* padding: 15px; */
     width: 230px;
