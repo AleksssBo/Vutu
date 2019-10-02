@@ -1,0 +1,64 @@
+main {
+    grid-area: main;
+    width: 98%;
+    margin-right: 10px;
+    margin: 0 auto;
+    margin-top: 1%;
+    position: relative;
+  }
+  
+  .profile {
+    background-color: #ffffff;
+    z-index: 2999;
+    position: relative;
+    padding-bottom: 100px;
+  }
+
+  
+
+  
+
+  
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .banner {
+      height: 160px;
+    }
+}
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {
+/* стили */
+}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+/* стили */
+}
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* стили */
+}
+
+/* iPads (горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* стили */
+}
+
+/* iPads (вертикальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+/* стили */
+}
+
+/* iPad 3**********/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+/* стили */
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+/* стили */
+}
+
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen  and (min-width: 1224px) {
+/* стили */
+}
