@@ -10,7 +10,6 @@ aside {
     transform: translateX(-210px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding-top: 60px;
   }
   
@@ -35,12 +34,16 @@ aside {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     transform: translateX(30px);
+
+    box-shadow: 1px 1px 20px -10px rgb(0, 0, 0);
     
     /* transform: translateX(-160px); */
   }
   
   .nav_item a {
     width: 100%;
+    color: #ffffff;
+    text-decoration: none;
   }
   
   .nav_item:first-child {
@@ -54,7 +57,7 @@ aside {
   
   .nav_item:last-child {
     margin: 0;
-    margin-bottom: 65px;
+    margin-top: 50px;
   }
   
   .nav_item:hover a{

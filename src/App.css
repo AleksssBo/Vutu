@@ -26,6 +26,15 @@
   position: relative;
 }
 
+main {
+  grid-area: main;
+  width: 98%;
+  margin-right: 10px;
+  margin: 0 auto;
+  margin-top: 1%;
+  position: relative;
+}
+
 
 
 
