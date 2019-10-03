@@ -4,8 +4,8 @@ import Avatar from './Avatar/Avatar'
 import Banner from './Banner/Banner'
 import ProfileAside from './Profile_aside/ProfileAside'
 import ProfileInfo from './Profile_info/ProfileInfo'
-import ProfileButton from '../Buttons/ProfileBtn/ProfileBtn'
-import MyPosts from './Posts/Posts'
+import Posts from './Posts/Posts'
+import Button from '../Buttons/Button'
 
 const Profile = () => {
     return (
@@ -14,14 +14,25 @@ const Profile = () => {
 
                 <Banner />
                 <Avatar />
-                <ProfileInfo />
-                <ProfileButton />
+                <ProfileInfo 
+                    name="Яна Бондаренко" 
+                    dateOfBirth="05.12.2003" 
+                    age="15" 
+                    city="Кропоткин" 
+                    contry="Россия"
+                    webSite="google.com"
+                />
+
+                <div className={s.button_wrap}>
+                    <Button name="Редактировать"/>
+                    <Button name="Мои новости"/>
+                </div>
 
             </div>
 
             <ProfileAside />
 
-            <MyPosts />
+            <Posts />
         </main>
     )
 }

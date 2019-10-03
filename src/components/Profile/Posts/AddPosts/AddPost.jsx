@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './AddPost.module.css'
+import Button from '../../../Buttons/Button'
 
 const AddPost = () => {
     return (
@@ -7,7 +8,7 @@ const AddPost = () => {
             <span className={s.add_post}>Добавить новость:</span>
             <input type="text" placeholder="Тема новости" />
             <textarea placeholder="Ваши новости..." />
-            <button className={s.submit}><span>Опубликовать</span></button>
+            <Button name="Опубликовать"  />
         </div>
     )
 }

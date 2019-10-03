@@ -1,19 +1,17 @@
 import React from 'react'
 import s from './Posts.module.css'
 import AddPost from './AddPosts/AddPost'
-import AllPost from './AllPosts/AllPost'
+import MyPosts from './MyPosts/MyPosts'
 
-const MyPosts = () => {
+const Posts = () => {
     return (
         <div className={s.posts}>
             
             <AddPost />
-
-
-            <AllPost />
+            <MyPosts />
 
         </div>
     )
 }
 
-export default MyPosts
+export default Posts
