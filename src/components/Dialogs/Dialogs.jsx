@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './Dialogs.module.css'
+import Button from "../Buttons/Button";
 
 const Dialogs = () => {
     return (
@@ -32,11 +33,59 @@ const Dialogs = () => {
                     </div>
                 </div>
 
-                <div className={s.messages}>
-                    <div className={s.message}>Hi!</div>
-                    <div className={s.message}>How are you?</div>
-                    <div className={s.message}>Ok, and you?</div>
-                    <div className={s.message}>All ok!</div>
+                <div className={s.messages} value="inter">
+
+
+                    <div className={s.scroll}>
+                        <div className={s.message_wrap}>
+                            <div className={s.message}>
+                                <div className={s.text}>Hi!</div>
+                                <div className={s.who}>Bogdan</div>
+                            </div>
+                        </div>
+
+                        <div className={s.message_wrap} value="me">
+                            <div className={s.message}>
+                                <div className={s.text}>Hello! My boyfriend)</div>
+                                <div className={s.who}>Me</div>
+                            </div>
+                        </div>
+
+                        <div className={s.message_wrap} value="me">
+                            <div className={s.message}>
+                                <div className={s.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum impedit itaque nihil perspiciatis. Aut, expedita!</div>
+                                <div className={s.who}>Me</div>
+                            </div>
+                        </div>
+
+                        <div className={s.message_wrap}>
+                            <div className={s.message}>
+                                <div className={s.text}>Ok</div>
+                                <div className={s.who}>Bogdan</div>
+                            </div>
+                        </div>
+
+                        <div className={s.message_wrap} value="me">
+                            <div className={s.message}>
+                                <div className={s.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, odio?</div>
+                                <div className={s.who}>Me</div>
+                            </div>
+                        </div>
+
+                        <div className={s.message_wrap}>
+                            <div className={s.message}>
+                                <div className={s.text}>Hi!</div>
+                                <div className={s.who}>Bogdan</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className={s.field}>
+                        <textarea placeholder="Напишите сообщение..."></textarea>
+                        <Button name="Отправить"/>
+                    </div>
+
                 </div>
             </div>
        </main>

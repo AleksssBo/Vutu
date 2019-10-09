@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebaedf05-3646-43e8-b15c-8c7bfe7ae975" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Aside/Aside.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Aside/Aside.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/MyPosts/MyPosts.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +19,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+            <state relative-caret-position="957">
+              <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -34,8 +45,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+            <state relative-caret-position="128">
+              <caret line="86" column="15" lean-forward="true" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,6 +76,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="23" column="86" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="86" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Profile/Posts/MyPosts/Post/Post.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -84,8 +117,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/components/Aside/Aside.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Profile/Posts/MyPosts/MyPosts.jsx" />
         <option value="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" />
+        <option value="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" />
       </list>
     </option>
   </component>
@@ -120,6 +154,11 @@
             <path>
               <item name="Vutu" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vutu" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vutu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vutu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -148,7 +187,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Profile" type="462c0819:PsiDirectoryNode" />
-              <item name="Profile_aside" type="462c0819:PsiDirectoryNode" />
+              <item name="Posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vutu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vutu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+              <item name="Posts" type="462c0819:PsiDirectoryNode" />
+              <item name="MyPosts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vutu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vutu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+              <item name="Posts" type="462c0819:PsiDirectoryNode" />
+              <item name="MyPosts" type="462c0819:PsiDirectoryNode" />
+              <item name="Post" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,6 +217,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -193,25 +252,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570187790713</updated>
-      <workItem from="1570187793373" duration="3193000" />
+      <workItem from="1570187793373" duration="8788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3193000" />
+    <option name="totallyTimeSpent" value="8788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3310153" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3310153" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -269,8 +327,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/Posts/Posts.module.css">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile_aside/ProfileAside.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/Posts/MyPosts/MyPosts.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="108" lean-forward="true" selection-start-line="10" selection-start-column="108" selection-end-line="10" selection-end-column="108" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Profile/Posts/MyPosts/Post/Post.module.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -278,6 +350,9 @@
           <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="53" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/Posts/Posts.module.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile_aside/ProfileAside.jsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -289,24 +364,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile_aside/ProfileAside.module.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/Posts/MyPosts/Post/Post.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        <state relative-caret-position="128">
+          <caret line="86" column="15" lean-forward="true" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        <state relative-caret-position="957">
+          <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
