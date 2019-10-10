@@ -7,7 +7,7 @@ import ProfileInfo from './Profile_info/ProfileInfo'
 import Posts from './Posts/Posts'
 import Button from '../Buttons/Button'
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <main>
             <div className={s.profile}>
@@ -30,9 +30,9 @@ const Profile = () => {
 
             </div>
 
-            <ProfileAside />
+            <ProfileAside friendsOnline={props.state.friendsOnline} />
 
-            <Posts />
+            <Posts posts={props.state.myPosts}/>
         </main>
     )
 }

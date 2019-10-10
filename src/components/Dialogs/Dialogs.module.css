@@ -10,9 +10,7 @@
     height: 60px;
     margin-bottom: 10px;
     margin-right: 10px;
-    display: flex;
 
-    align-items: flex-start;
 
     box-shadow:0px 1px 6px 0px rgba(0,0,0,0.2);
     -webkit-box-shadow:0px 1px 6px 0px rgba(0,0,0,0.2);
@@ -49,9 +47,9 @@
 
 .active {
     /*padding: 10px;*/
-    /*box-shadow:0px 1px 6px 0px rgba(0,0,0,0.35);*/
-    /*-webkit-box-shadow:0px 1px 6px 0px rgba(0,0,0,0.35);*/
-    /*-moz-box-shadow:0px 1px 6px 0px rgba(0,0,0,0.35);*/
+    box-shadow:0px 1px 6px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow:0px 1px 6px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow:0px 1px 6px 0px rgba(0,0,0,0.35);
 }
 
 .active .name{
@@ -68,13 +66,26 @@
     font-weight: 600;
 }
 
+.dialogs a {
+    color: #f56060;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: flex-start;
+    transition: .5s;
+}
+
 .messages {
     box-shadow:0px 1px 6px 0px rgba(0,0,0,0.35);
     -webkit-box-shadow:0px 1px 6px 0px rgba(0,0,0,0.35);
     -moz-box-shadow:0px 1px 6px 0px rgba(0,0,0,0.35);
     height: 87vh;
     position: relative;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     overflow: hidden;
 }
 
@@ -84,7 +95,7 @@
     border-radius: 20px;
     padding: 10px;
     padding-top: 12px;
-    width: 50%;
+    width: 40%;
     position: relative;
     cursor: pointer;
 }
@@ -92,6 +103,8 @@
 .scroll {
     height: 88.5%;
     overflow-y: scroll;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .message:hover {
@@ -105,11 +118,33 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.message_wrap[value="me"] {
+.message_wrap[value="Me"], .message_wrap[value="Я"]{
     justify-content: flex-end;
 }
 
-.who {
+.message_wrap[value="Me"] img, .message_wrap[value="Я"] img {
+    margin-left: 10px;
+}
+
+.message_wrap[value="Me"] img:last-child, .message_wrap[value="Я"] img:last-child {
+    display: block;
+}
+
+.message_wrap[value="Me"] img:nth-child(1), .message_wrap[value="Я"] img:nth-child(1) {
+    display: none;
+}
+
+.message_wrap img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.message_wrap img:last-child {
+    display: none;
+}
+
+.time {
     font-size: 12px;
     position: absolute;
     top: 7px;
@@ -128,6 +163,7 @@
     left: 0px;
     padding-left: 10px;
     padding-bottom: 10px;
+    padding-top: 10px;
     width: 100%;
     background-color: #fff;
 }

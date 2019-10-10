@@ -3,12 +3,12 @@ import s from './Posts.module.css'
 import AddPost from './AddPosts/AddPost'
 import MyPosts from './MyPosts/MyPosts'
 
-const Posts = () => {
+const Posts = (props) => {
     return (
         <div className={s.posts}>
             
             <AddPost />
-            <MyPosts />
+            <MyPosts Posts={props.posts}/>
 
         </div>
     )
