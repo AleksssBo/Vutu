@@ -1,12 +1,14 @@
+import {renderApp} from "../render";
+
 let state  = {
 
     profilePage: {
 
         myPosts: [
-            {theme: "Как мои дела?", content: "Хей! Мои дела прекрасны, сегодня я купила себе новый телефон!", likeCount: 12},
-            {theme: "Отдыхаю...", content: "Сегодня я с семьез поехала в горы где провела круто время.", likeCount: 8},
-            {theme: "Новый день!", content: "Доброе утро, настал новый день. Вперед к свершениям!", likeCount: 325},
-            {theme: "Боль и страдания", content: " страдаю, это больно", likeCount: 666},
+            {id: 1, theme: "Как мои дела?", content: "Хей! Мои дела прекрасны, сегодня я купила себе новый телефон!", likeCount: 12},
+            {id: 2, theme: "Отдыхаю...", content: "Сегодня я с семьез поехала в горы где провела круто время.", likeCount: 8},
+            {id: 3, theme: "Новый день!", content: "Доброе утро, настал новый день. Вперед к свершениям!", likeCount: 325},
+            {id: 4, theme: "Боль и страдания", content: " страдаю, это больно", likeCount: 666},
         ],
 
         friendsOnline: [
@@ -15,7 +17,13 @@ let state  = {
             {id: 3, name: "Эмилия", gen: "w"},
             {id: 4, name: "Никита", gen: "m"},
             {id: 5, name: "Ксюша", gen: "w"}
-        ]
+        ],
+
+
+        postNewTheme: "",
+
+        postNewText: ""
+
 
     },
 
@@ -39,5 +47,35 @@ let state  = {
     }
 
 }
+
+export let addPost = () => {
+
+    let post = {
+        id: 5,
+        theme: state.profilePage.postNewTheme,
+        content: state.profilePage.postNewText,
+        likeCount: 0
+    }
+
+    state.profilePage.postNewText = ''
+    state.profilePage.postNewTheme = ''
+
+    state.profilePage.myPosts.push(post)
+    renderApp(state)
+}
+
+export let updateTextPost = (text) => {
+    debugger;
+
+    state.profilePage.postNewText = text
+    renderApp(state)
+}
+
+export let updateThemePost = (theme) => {
+    state.profilePage.postNewTheme = theme
+    renderApp(state)
+}
+
+
 
 export default state

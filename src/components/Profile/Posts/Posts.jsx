@@ -7,7 +7,12 @@ const Posts = (props) => {
     return (
         <div className={s.posts}>
             
-            <AddPost />
+            <AddPost addPost={ props.addPost }
+                     newText={ props.newText }
+                     newTheme={ props.newTheme }
+                     updateText={ props.updateText }
+                     updateTheme={ props.updateTheme }/>
+
             <MyPosts Posts={props.posts}/>
 
         </div>

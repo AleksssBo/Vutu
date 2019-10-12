@@ -11,7 +11,7 @@ const MyPosts = (props) => {
         <div className={s.all_posts}>
             <h2 className={s.news_title}>Мои новости</h2>
 
-            { postElements }
+            { postElements.reverse() }
 
         </div>
     )

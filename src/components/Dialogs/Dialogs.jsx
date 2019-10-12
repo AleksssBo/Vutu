@@ -7,6 +7,15 @@ import Message from "./Message/Message";
 
 const Dialogs = (props) => {
 
+    let msg = React.createRef()
+
+    let sendMsg = () => {
+        let msgText = msg.current.value
+        msg.current.value = null
+
+        alert(`Message: ${ msgText }`)
+    }
+
 
 
     let dialogElements = props.state.dialogs.map(item => <Dialog name={item.name} id={item.id} gen={item.gen}/>)
@@ -27,8 +36,8 @@ const Dialogs = (props) => {
                     </div>
 
                     <div className={s.field}>
-                        <textarea placeholder="Напишите сообщение..."></textarea>
-                        <Button name="Отправить"/>
+                        <textarea placeholder="Напишите сообщение..." ref={ msg }></textarea>
+                        <Button name="Отправить" fn={ sendMsg }/>
                     </div>
 
                 </div>

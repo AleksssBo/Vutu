@@ -2,8 +2,8 @@ import React from 'react'
 import s from './Profile.module.css'
 import Avatar from './Avatar/Avatar'
 import Banner from './Banner/Banner'
-import ProfileAside from './Profile_aside/ProfileAside'
-import ProfileInfo from './Profile_info/ProfileInfo'
+import ProfileAside from './ProfileAside/ProfileAside'
+import ProfileInfo from './ProfileInfo/ProfileInfo'
 import Posts from './Posts/Posts'
 import Button from '../Buttons/Button'
 
@@ -32,11 +32,15 @@ const Profile = (props) => {
 
             <ProfileAside friendsOnline={props.state.friendsOnline} />
 
-            <Posts posts={props.state.myPosts}/>
+            <Posts posts={props.state.myPosts}
+                   addPost={ props.addPost }
+                   newText={props.state.postNewText}
+                   newTheme={props.state.postNewTheme}
+                   updateText={ props.updateText }
+                   updateTheme={ props.updateTheme }/>
         </main>
     )
 }
-
 
 export default Profile
 
