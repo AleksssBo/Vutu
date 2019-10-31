@@ -1,12 +1,12 @@
 import React from 'react'
 import s from './AddPost.module.css'
 import Button from '../../../Buttons/Button'
-import {renderApp} from "../../../../render";
+
 
 const AddPost = (props) => {
 
-    let themePost = React.createRef();
-    let textPost = React.createRef();
+    let themePost = React.createRef()
+    let textPost = React.createRef()
 
     let addPost = () => {
         props.addPost()
@@ -14,12 +14,12 @@ const AddPost = (props) => {
 
     let changeTextPost = () => {
         let text = textPost.current.value
-        props.updateText(text)
+        props.changePostText(text)
     }
 
     let changeThemePost = () => {
         let theme = themePost.current.value
-        props.updateTheme(theme)
+        props.changePostTheme(theme)
     }
 
 

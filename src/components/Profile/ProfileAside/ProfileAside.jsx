@@ -5,7 +5,7 @@ import FriendsOnline from "./FriendsOnline/FriendsOnline";
 const ProfileAside = (props) => {
     return (
         <aside className={s.profile_aside}>
-            <FriendsOnline Friends={props.friendsOnline}/>
+            <FriendsOnline friends={props.friends}/>
         </aside>
     )
 }

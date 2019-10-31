@@ -10,33 +10,33 @@ const Dialogs = (props) => {
     let msg = React.createRef()
 
     let sendMsg = () => {
-        let msgText = msg.current.value
-        msg.current.value = null
-
-        alert(`Message: ${ msgText }`)
+        props.sendMsg(msg.current.value)
+        msg.current.value = ''
     }
 
+    let updateMsgText = () => {
+        props.updateMsgtext(msg.current.value)
+    }
 
-
-    let dialogElements = props.state.dialogs.map(item => <Dialog name={item.name} id={item.id} gen={item.gen}/>)
-    let msgElements = props.state.messages.map(item => <Message id={item.id} who={item.who} msg={item.msg} gen={item.gen}/>)
+    let dialogElements = props.dialogs.map(item => <Dialog name={item.name} id={item.id} gen={item.gen}/>)
+    let msgElements = props.messages.map(item => <Message id={item.id} who={item.who} msg={item.msg} gen={item.gen}/>)
 
     return (
        <main>
             <div className={s.dialogs}>
 
-                <div className={s.dialog_items}>
-                    { dialogElements }
-                </div>
+                <div>{dialogElements}</div>
 
                 <div className={s.messages} value="inter">
 
-                    <div className={s.scroll}>
-                        { msgElements }
-                    </div>
+                    <div className={s.scroll}>{msgElements}</div>
 
-                    <div className={s.field}>
-                        <textarea placeholder="Напишите сообщение..." ref={ msg }></textarea>
+                    <div className={s.field} >
+                        <textarea placeholder="Напишите сообщение..."
+                                  ref={ msg }
+                                  onChange={ updateMsgText }
+                                  value={props.msgText}  />
+
                         <Button name="Отправить" fn={ sendMsg }/>
                     </div>
 

@@ -4,7 +4,7 @@ import FriendOnline from "./FriendOnline/FriendOnline";
 
 const FriendsOnline = (props) => {
 
-    let friendsOnline = props.Friends.map( friendOnline => <FriendOnline name={friendOnline.name} gen={friendOnline.gen}/>)
+    let friendsOnline = props.friends.map( friendOnline => <FriendOnline name={friendOnline.name} gen={friendOnline.gen}/>)
 
     return (
             <div className={s.friends_online}>
